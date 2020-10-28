@@ -1,6 +1,7 @@
-# python_fall20_anh
-Name: Anh Nguyen
+# Welcome to my repo for the Python class
 
-DT journal: https://www.notion.so/Greeting-from-Anh-Nguyen-d573f8a8fa504f03afd62749ecb74672
+:smile: My name is Anh Nguyen.
 
-Hi, this is where I store and submit my python exercise.
+:pencil2: You can see more of my works in other classes at my DT journal: https://www.notion.so/Greeting-from-Anh-Nguyen-d573f8a8fa504f03afd62749ecb74672
+
+I will use this Github repo to save and submit class materials.
