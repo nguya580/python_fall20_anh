@@ -1,5 +1,8 @@
 ## :book: This is the pseudocode of my calculator.
 
+Here are my resources:
+- (while loop)[https://www.youtube.com/watch?v=6iF8Xb7Z3wQ&list=PLVW1_dn6ebDzRE6e_ezvt9qnJ3uRJPNI9&index=2]
+
 - Define functions for operators.
     - Addition.
     - Subtraction.
