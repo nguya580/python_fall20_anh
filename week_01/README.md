@@ -1,11 +1,10 @@
 ## :book: This is the pseudocode of my calculator.
 
 - Define functions for operators.
-    - Adding.
-    - Minus.
+    - Addition.
+    - Subtraction.
     - Multiply.
     - Division.
-    - Subtraction.
     - Exponentiation.
 
 - Ask user for input of the **first number.**
