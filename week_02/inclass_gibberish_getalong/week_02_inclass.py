@@ -69,3 +69,5 @@ slacker("uuu", "aaaa")
 oh = "ooooohhhh"
 hihi = "hiiiihiiii"
 slacker(oh, hihi)
+
+print(type(slacker("uuu", "aaaa")))
