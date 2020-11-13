@@ -108,12 +108,12 @@ import matplotlib.pyplot as plt
 data_anh = {'Youtube': 6, 'Instagram': 3, 'Facebook': 2, 'Chrome': 1}
 data_teddy = {'Youtube': 10, 'Instagram': 6, 'Facebook': 6, 'Chrome': 3}
 
-app_names_y = list(data_anh.keys())
-values_anh_x = list(data_anh.values())
-value_teddy_x = list(data_teddy.values())
+app_names_x = list(data_anh.keys())
+values_anh_y = list(data_anh.values())
+value_teddy_y = list(data_teddy.values())
 
-plt.plot(app_names_y, values_anh_x, linestyle='--', label='Anh data', marker='s')
-plt.plot(app_names_y, value_teddy_x, label='Teddy data', marker='s')
+plt.plot(app_names_x, values_anh_y, linestyle='--', label='Anh data', marker='s')
+plt.plot(app_names_x, value_teddy_y, label='Teddy data', marker='s')
 
 plt.xlabel('App Names')
 plt.ylabel('Hours')
