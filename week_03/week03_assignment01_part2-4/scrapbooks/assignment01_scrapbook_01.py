@@ -18,21 +18,39 @@ def list_to_string(list, string_name):
     string_name = ', '.join(list)
 
 # %% codecell
+def getnews_en_us(list, output_list):
+    ''' this function get a list of news sources id in English within the US '''
+
+    en_us_filter = []
+
+    #filter through to get a list of source in en and US
+    for source in list:
+        if source["language"] == "en" and source["country"] == "us":
+            en_us_filter.append(source)
+
+    en_us_filter
+
+    #filter only the source ID in en and US
+    output_list = []
+    for item in en_us_filter:
+        id = item['id']
+        output_list.append(id)
+# %% codecell
+#create a list of news id written in English within the US
+en_us_news = []
+getnews_en_us(sources['sources'], en_us_news)
+news_en_us = en_us_news
+
+#converse the list into a string of news id
+src_tostring = ''
+list_to_string(news_en_us, src_tostring)
+
+# %% codecell
 def news_searchengine():
     print('''The application helps you search for news articles from the last 30 days.
 Your results will be saved as a CSV file as "news_fromkeyword_python.csv". \n''')
 
     keyword = input(str('Enter a keyword you want to search: '))
-
-    #sources list in English in the US
-    sources_list = ['abc-news', 'bbc-news', 'bloomberg', 'business-insider', 'cbs-news', 'cnn', 'google-news', 'nbc-news', 'new-york-magazine', 'politico', 'reuters', 'the-verge', 'the-wall-street-journal', 'the-washington-post', 'the-washington-times', 'time', 'vice-news']
-
-    #use function to convert list to string
-    src_tostring = ''
-    list_to_string(sources_list, src_tostring)
-
-    #check if string from sources_list is print out correctly
-    # print(src_tostring)
 
     top_headlines = newsapi.get_top_headlines(q = keyword, sources = src_tostring)
     # print(top_headlines)
