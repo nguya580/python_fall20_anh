@@ -102,6 +102,4 @@ df
 
 # %% codecell
 
-
-
 df['Priority'].value_counts()
